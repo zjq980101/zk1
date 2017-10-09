@@ -1,0 +1,1 @@
+var gulp=require("gulp"),uglify=require("gulp-uglify"),concat=require("gulp-concat");gulp.task("uglify",function(){gulp.src("./*.js").pipe(uglify()).pipe(gulp.dest("./minjs"))}),gulp.task("concat",function(){gulp.src("./*.js").pipe(concat("h.js")).pipe(gulp.dest("./hb"))}),gulp.task("default",["uglify","concat"]);

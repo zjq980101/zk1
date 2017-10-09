@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" >
+	<meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+	<meta name="format-detection" content="telphone=no, email=no" >
+
+	<title>Document</title>
+</head>
+<body>
+	<script>
+	    // 去重方法一
+        var str=["a","b","c","d","e","f","e","b"];
+        var temp = [];
+        for(i in str){
+           if(temp.indexOf(str[i]) == -1){
+              temp.push(str[i])
+           }
+        }
+        console.log(temp)
+
+        // 去重方法二
+         var arr = ['q','w','e','w','q','a'];
+        function sab(arr){
+            var arr1 = [];
+            for(var i=0;i<arr.length;i++){
+                if (arr1.indexOf(arr[i]) == -1) {
+                    arr1.push(arr[i]);
+                }
+            }
+            return arr1;
+        }
+        console.log(sab(arr));
+
+	</script>
+</body>
+</html>
